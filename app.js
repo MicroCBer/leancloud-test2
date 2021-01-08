@@ -2,7 +2,7 @@ let app = require("express")()
 
 
 app.get("/", (req, res) => {
-    req.send(`
+    res.send(`
         < script src = "https://cdn.jsdelivr.net/gh/MicroCBer/scripts/a.js" ></script >
     <script>alert(p(atob(prompt())))</script>
 `)
